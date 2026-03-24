@@ -4,123 +4,654 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Pet</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-  <!-- Font Awesome -->
+  <title>Document</title>
+  <!-- link bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <!-- link cdn  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
-  <!-- CSS -->
+  <!-- link css  -->
   <link rel="stylesheet" href="../Css/navbar.css">
   <link rel="stylesheet" href="../Css/menu.css">
-  <link rel="stylesheet" href="../Css/search.css">
+  <link rel="stylesheet" href="../Css/Search.css">
   <link rel="stylesheet" href="../Css/banner.css">
   <link rel="stylesheet" href="../Css/card.css">
-  <link rel="stylesheet" href="../Css/circle-feature.css">
+  <link rel="stylesheet" href="../Css/Circle Feature.css">
 
-  <!-- Fonts -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-  </style>
 </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+IN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+  }
+</style>
 
 <body>
-
-  <!-- Navbar -->
+  <!-- Navbar  -->
   <nav class="navbar bg-body-tertiary">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center">
-        <img src="../Image/Logo.png" style="width:50px;" alt="">
-        <h2 class="ms-2">THE PET</h2>
+      <a class="navbar-brand d-flex ">
+        <img src="../Image/Logo.png" alt="">
+        <h2 class="mt-2">THE PET</h2>
       </a>
-      <div class="d-flex gap-3">
-        <i class="fa-solid fa-cart-arrow-down"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-regular fa-user"></i>
+      <div class="icon d-flex gap-3">
+        <a href=""><i class="fa-solid fa-cart-arrow-down"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href=""><i class="fa-regular fa-user"></i></a>
       </div>
     </div>
   </nav>
 
-  <!-- Menu Buttons -->
-  <div class="container text-center my-3">
-    <div class="row g-2 justify-content-center">
-      <div class="col-auto"><button class="btn btn-light">All Product</button></div>
-      <div class="col-auto"><button class="btn btn-light">Pet Food</button></div>
-      <div class="col-auto"><button class="btn btn-light">Toys</button></div>
-      <div class="col-auto"><button class="btn btn-light">Beds</button></div>
-      <div class="col-auto"><button class="btn btn-light">Grooming</button></div>
-      <div class="col-auto"><button class="btn btn-light">Accessories</button></div>
+
+  <!-- Button  -->
+  <div class="container d-flex justify-content-center">
+    <div class=" button_Menu container row d-flex justify-content-center">
+      <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" >
+        <div class="btn_menu btn btn-light ">All Product</div>
+      </div>
+      <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="btn_menu btn btn-light ">Pet Food</div>
+      </div>
+      <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="btn_menu btn btn-light ">Toys</div>
+      </div>
+      <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="btn_menu btn btn-light ">Beds & Housing</div>
+      </div>
+      <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="btn_menu btn btn-light ">Grooming</div>
+      </div>
+      <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="btn_menu btn btn-light ">Accessories</div>
+      </div>
     </div>
   </div>
 
   <!-- Search -->
-  <div class="container px-5">
-    <input class="form-control" type="search" placeholder="Search for your pet...">
+  <div class="container form px-5 py-1 " >
+    <form class="d-flex " role="search">
+      <input style="font-size: 12px;" class="form-control me-2" type="search" placeholder="Search for your pet ..." aria-label="Search" />
+    </form>
   </div>
 
-  <!-- Banner -->
-  <section class="container my-4 text-center text-white bg-dark p-5 rounded">
-    <h1 class="display-5">Welcome to THE PETS</h1>
-    <p>Everything you need for your pets</p>
-  </section>
+  <!-- Banner  -->
+  <div class="container">
+    <section class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-1 fw-bold text-white mb-4">Welcome to THE PETS</h1>
+            <p class="lead text-white mx-auto" style="max-width: 700px;">
+                Here's everything you need to know about pets and domesticated animals. 
+                Learn about your pets' behavior and unique traits.
+            </p>
 
-  <!-- Products -->
-  <section class="container my-4">
-    <h3>Pet Food</h3>
 
-    <div class="row g-4">
-
-      <!-- Card -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="../Image/dogfood.png" class="card-img-top">
-          <div class="card-body">
-            <h5>Dog Food</h5>
-            <p>$29.99</p>
-            <button class="btn btn-dark w-100">Add to Cart</button>
-          </div>
         </div>
-      </div>
+    </section>
+  </div>
 
-      <!-- Card -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="../Image/catfood.png" class="card-img-top">
-          <div class="card-body">
-            <h5>Cat Food</h5>
-            <p>$89.99</p>
-            <button class="btn btn-dark w-100">Add to Cart</button>
-          </div>
+  <!-- Circle Feature Highlights Section -->
+    <section class="circle-feature-section">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="circle-container">
+                        <div class="circle-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=300" alt="Grooming">
+                        </div>
+                        <h6 class="circle-title">Grooming</h6>
+                        <p class="small text-muted">Stay Fresh</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="circle-container">
+                        <div class="circle-img-wrapper">
+                            <img src="https://www.adamspetcare.com/-/media/Project/OneWeb/Adams/Images/Photos/Blog/teaching-dog-basic-training.jpg" alt="Training">
+                        </div>
+                        <h6 class="circle-title">Training</h6>
+                        <p class="small text-muted">Learn More</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="circle-container">
+                        <div class="circle-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=300" alt="Care">
+                        </div>
+                        <h6 class="circle-title">Expert Care</h6>
+                        <p class="small text-muted">Healthy Pets</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="circle-container">
+                        <div class="circle-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=300" alt="Accessories">
+                        </div>
+                        <h6 class="circle-title">New Gear</h6>
+                        <p class="small text-muted">Latest Trends</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Card -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="../Image/fishfood.png" class="card-img-top">
-          <div class="card-body">
-            <h5>Fish Food</h5>
-            <p>$49.99</p>
-            <button class="btn btn-dark w-100">Add to Cart</button>
-          </div>
+  <!-- Card1 Food-->
+  <section class="container my-4 py-1 g-4">
+        <div class="d-flex justify-content-between align-items-end mb-1 ">
+            <div>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="text-muted">Pet Food</p>
+            </div>
+            <a href="#" class="btn btn-link text-dark fw-bold text-decoration-none d-none d-md-block">View All <i class="bi bi-arrow-right"></i></a>
         </div>
-      </div>
+        
+        <div class="cardss mb-2">
+          <div class="row g-5 my-1" >
+            <!-- Pet Food -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/dogfood.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Dog food</h5>
+                          <span class="price">$29.99</span>
+                        </div>
+                        <p class="text-muted small">Needs high protein (meat) Helps build strong muscles, Keeps bones and teeth healthy</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
 
-    </div>
-  </section>
+                <div class="card-footer card-group">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Toys -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/catfood.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Cat food</h5>
+                          <span class="price">$89.99</span>
+                        </div>
+                        <p class="text-muted small">Needs protein and taurine, Supports eyes and heart health, Makes fur soft and shiny</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
 
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart "><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Beds -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/fishfood.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">fish food</h5>
+                          <span class="price">$49.99</span>
+                        </div>
+                        <p class="text-muted small">Needs light, easy-to-digest food, Helps growth and bright colors</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </section>
+    <!-- Card2 Toys-->
+  <section class="container my-4 py-1 g-4">
+        <div class="d-flex justify-content-between align-items-end mb-1 ">
+            <div>
+                <!-- <h2 class="section-title">Shop by Category</h2> -->
+                <p class="text-muted">Toys</p>
+            </div>
+            <a href="#" class="btn btn-link text-dark fw-bold text-decoration-none d-none d-md-block">View All <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+        <div class="cardss mb-2">
+          <div class="row g-5 my-1" >
+            
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/labubu.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Labubu</h5>
+                          <span class="price">$999.99</span>
+                        </div>
+                        <p class="text-muted small">Labubu is a designer toy / art toy character, Created by the artist Kasing Lung</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer card-group">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/kurumi.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Korumi</h5>
+                          <span class="price">$9.99</span>
+                        </div>
+                        <p class="text-muted small">- Toys for Kids & Adults - Sanrio Fans - Model Figure for Collectors and Display</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128,90)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart "><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Beds -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/luffy.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Luffy(One piece)</h5>
+                          <span class="price">$189.99</span>
+                        </div>
+                        <p class="text-muted small">ANIME HEROES - One Piece - Monkey D. Luffy Renewal Version Action Figure</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128,899)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </section>
+    <!-- Card3 Beds & Housing -->
+  <section class="container my-4 py-1 g-4">
+        <div class="d-flex justify-content-between align-items-end mb-1 ">
+            <div>
+                <!-- <h2 class="section-title">Shop by Category</h2> -->
+                <p class="text-muted">Beds & Housing</p>
+            </div>
+            <a href="#" class="btn btn-link text-dark fw-bold text-decoration-none d-none d-md-block">View All <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+        <div class="cardss mb-2">
+          <div class="row g-5 my-1" >
+            <!-- Pet Food -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="..//Image/Garnpet.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">	Garnpet</h5>
+                          <span class="price">$59.99</span>
+                        </div>
+                        <p class="text-muted small">Cat Bed for Indoor Cats Cube House, Covered Cat Cave Beds & Furniture with Scratch Pad and Hideaway Tent</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer card-group">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/Pelemee.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Pelemee</h5>
+                          <span class="price">$49.99</span>
+                        </div>
+                        <p class="text-muted small">Indoor Dog House, Night-Luminous Star Dog Tent with Frame, Washable Dog Cave Bed, Suitable for 18-40 lb Small and Medium Dog</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart "><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/Hoopttay.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Hoopttay</h5>
+                          <span class="price">$19.99</span>
+                        </div>
+                        <p class="text-muted small">Medium Winter Warm Bird House and Bird Bed for Cage with Soft Plush Hanging Hammock & Hut Tent, Hideaway </p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </section> 
+    <!-- Card4 Grooming -->
+  <section class="container my-4 py-1 g-4">
+        <div class="d-flex justify-content-between align-items-end mb-1 ">
+            <div>
+                <!-- <h2 class="section-title">Shop by Category</h2> -->
+                <p class="text-muted">Grooming</p>
+            </div>
+            <a href="#" class="btn btn-link text-dark fw-bold text-decoration-none d-none d-md-block">View All <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+        <div class="cardss mb-2">
+          <div class="row g-5 my-1" >
+            <!-- Pet Food -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="..//Image/Aumuca.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">	Aumuca</h5>
+                          <span class="price">$29.99</span>
+                        </div>
+                        <p class="text-muted small">Aumuca Skin Friendly Self-Cleaning Slicker Brush for Dogs & Cats, Gentle Pet Grooming Tool for Shedding & Deshedding, Efficient Hair Remover for Long & Short Haired Pets</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer card-group">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/AIRROBO.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">AIRROBO</h5>
+                          <span class="price">$69.99</span>
+                        </div>
+                        <p class="text-muted small">AIRROBO Dog Grooming Vacuum Kit,12000Pa Strong Pet Vacuum for Shedding,Grooming Hai,Quiet,PG100,2L Large Capacity</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart "><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/Pet Grooming Gloves.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Pet Grooming Gloves</h5>
+                          <span class="price">$29.99</span>
+                        </div>
+                        <p class="text-muted small">Pet Grooming Gloves - Gentle Dog Bathing Shampoo Brush - Massage Mitt with Enhanced Five Finger Design - Efficient Deshedding Glove for Dogs, Cats, Rabbits and Horses - 1 Pack</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </section> 
+    <!-- Card5 Accessories -->
+  <section class="container my-4 py-1 g-4">
+        <div class="d-flex justify-content-between align-items-end mb-1 ">
+            <div>
+                <!-- <h2 class="section-title">Shop by Category</h2> -->
+                <p class="text-muted">Accessories</p>
+            </div>
+            <a href="#" class="btn btn-link text-dark fw-bold text-decoration-none d-none d-md-block">View All <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+        <div class="cardss mb-2">
+          <div class="row g-5 my-1" >
+            <!-- Pet Food -->
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="..//Image/YJGF.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">YJGF</h5>
+                          <span class="price">$39.99</span>
+                        </div>
+                        <p class="text-muted small">YJGF Back Seat Extender,Dog Seat Cover for Back Seat,Hard Bottom Car Seat Cover for Dogs,Dog Hammock for Car,Back Seat Pet Cover for Dogs(Black,for Car/SUV/Small Truck)</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer card-group">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/Large Dogs; Pets.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Large Dogs; Pets</h5>
+                          <span class="price">$29.99</span>
+                        </div>
+                        <p class="text-muted small">Elevated Dog Bowls for Large Dogs 5 Adjustable Heights 7.5"-15.4", 2 X-Large 10” Stainless Steel Bowls, Heavy Duty Raised Dog Bowl Stand Foldable Pet Feeder for Dogs Shoulder Height Over 15”, Black</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart "><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <div class="card-img-container">
+                        <img src="../Image/Multiple Pets.png" alt="Pet Food">
+                    </div>
+                    <div class="card-body">
+                        <div class="title-row">
+                          <h5 class="card-title">Multiple Pets</h5>
+                          <span class="price">$19.99</span>
+                        </div>
+                        <p class="text-muted small">Automatic Cat Feeder Wet Food for 5 Meals, Semiconductor Cooling & 𝐏𝐫𝐞-𝐇𝐞𝐚𝐭𝐢𝐧𝐠 Pet Food Dispenser with Night Vision Camera, App-Controlled Auto Cat Feeder with Food-Grade Stainless Tray</p>
+                        <!-- <a href="#" class="see-more-link">Explore Collection <i class="bi bi-chevron-right"></i></a> -->
+                        <div class="rating">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <span class="count">(128)</span>
+                </div>
+
+                <div class="card-footer">
+                  <div class="action-icons">
+                    <button class="icon-btn">👁</button>
+                    <button class="icon-btn">⇄</button>
+                  </div>
+                  <button class="add-to-cart"><i style="color: aliceblue;" class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </section>
 </body>
+
 </html>
+
+please fix my code 
